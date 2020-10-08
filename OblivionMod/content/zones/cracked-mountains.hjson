@@ -1,12 +1,12 @@
 name: Cracked Mountains
-description: A new zone that has 1 more enemy.
+description: A new zone with a new dangerous enemy.
 loadout: basicFoundation
 startingItems: [
-  copper/150
+  copper/200
   lead/100
 ]
 conditionWave: 15
-launchPeriod: 15
+launchPeriod: 10
 requirements: [
   {
     type: ZoneWave
@@ -15,17 +15,25 @@ requirements: [
   }
   {
     type: Unlock
-    block: scatter
+    block: kiln
   }
   {
     type: Unlock
-    block: solar-panel
+    block: silicon-smelter
+  }
+  {
+    type: Unlock
+    block: graphite-press
+  }
+  {
+    type: Unlock
+    block: combustion-generator
   }
 ]
 resources: [
   copper
+  silver
   lead
   coal
   sand
-  titanium
 ]
